@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+	<head>
+	<meta charset="UTF-8">
+  	<title>Course Catalog App</title>
+	<link rel="stylesheet" href="app.css">
+	<script src="main.js" defer></script>
+	</head>
+
+	<body>
+		<h1 class="logo">CourseMan</h1>
+		<header class="primary-header-flex">
+			<button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+				<span class="sr-only"></span>
+			</button>
+			<nav>
+				<ul id="primary-navigation" class="primary-navigation flex" data-visible="false">
+					<li>
+						<a href="index.html" >
+						  <span aria-hidden="true">00</span>Home
+					  </a></li>
+					  <li>
+						<a href="instructions.html" >
+						  <span aria-hidden="true">01</span>Instructions
+						  </a>
+					  </li>
+					  <li>
+						  <a href="Previous_Courses.html" >
+						  <span aria-hidden="true">02</span>Previous Courses
+						  </a></li>
+					  <li><a href="Courses.html" >
+						  <span aria-hidden="true">03</span>Select Courses
+						  </a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<script type="module" src="https://s.brightspace.com/lib/bsi/20.23.8-201/unbundled/mathjax.js"></script>
+		<script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+			if (document.querySelector('math') || /\$\$|\\\(|\\\[|\\begin{|\\ref{|\\eqref{/.test(document.body.innerHTML)) {
+				document.querySelectorAll('mspace[linebreak="newline"]').forEach(elm => {
+					elm.setAttribute('style', 'display: block; height: 0.5rem;');
+				});
+
+				window.D2L.MathJax.loadMathJax({
+					'outputScale': 1.5,
+					'renderLatex': true
+				});
+			}
+		});
+		</script><script type="module" src="https://s.brightspace.com/lib/bsi/20.23.8-201/unbundled/prism.js"></script>
+		<script type="text/javascript">document.addEventListener('DOMContentLoaded', function() {
+			document.querySelectorAll('.d2l-code').forEach(code => {
+				window.D2L.Prism.formatCodeElement(code);
+			});
+		});
+		</script>
+	</body>
+</html>
+
+	

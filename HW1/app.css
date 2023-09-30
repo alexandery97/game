@@ -1,0 +1,324 @@
+:root {
+  --text-color: rgb(50, 50, 50);
+  --background-color: #ffffff;
+  --light-background-color: #f4f4f4;
+  --nav-bar-color: #ffffff;
+  --selected-color: rgb(229, 241, 253);
+  --action-text-color: #ffffff;
+  --action-color: rgb(58, 99, 197);
+  --border-color: darkgray;
+}
+
+html {
+  margin-left: 20px;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+  font-size: 24px;
+  background: url(SUNYKorea_AcBldg.jpg);
+  overflow-x: hidden;
+}
+
+.logo {
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+}
+
+.menu {
+  display: block;
+  background-color: #ffffff50; 
+  text-align: center; 
+  opacity: 0.5; 
+  font-size: 22px; 
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center;
+}
+
+.home-menu-item {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  margin-left: 120px; 
+}
+
+.menu-item a {
+    text-decoration: none; 
+    color: rgb(255, 255, 255); 
+    font-weight: bold; 
+}
+
+.flex{
+  display:flex;
+  gap: var(--gap, 4rem);
+  justify-content: flex-end;
+}
+
+.mobile-nav-toggle{
+  display: none;
+}
+
+.menu-bar {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+}
+
+.menu-bars {
+  position: absolute;
+  top: 45px;
+  right: 20px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.primary-navigation{
+  list-style: none;
+  padding:0;
+  margin:0;
+
+  background: hsl(0 0% 100% / 0.1);
+  backdrop-filter: blur(1rem)
+}
+
+.primary-navigation a{
+  text-decoration: none;
+  color:#f4f4f4;
+}
+
+.primary-navigation a > span{
+  
+  font-weight: 1000;
+  margin-inline-end: 0.65em;
+}
+
+@media (max-width: 40em) {
+  .primary-navigation{
+    --gap: 3em;
+    position: fixed;
+    z-index: 1000;
+    inset: 0 0 0 10%;
+    flex-direction: column;
+    padding: 5rem 2em;
+    transform: translateX(100%);
+  }
+
+  .primary-navigation[data-visible="true"] {
+    transform: translateX(0%);
+  }
+
+  .mobile-nav-toggle{
+    display: block;
+    position: absolute;
+    z-index: 9999;
+    background-color: transparent;
+    background-image: url('hamburger_list.jpg'); 
+    background-repeat: no-repeat;
+    width: 50px; 
+    height: 50px; 
+    border: 0;
+    aspect-ratio: 1;
+    top: 4rem;
+    right: 2rem;
+  }
+
+  /* button property change, 40em일때 */
+  
+  .home-menu-item {
+    display: none;
+  }
+
+  .table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .d-flex {
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+@media (min-width: 40em) {
+  .menu-bar {
+    display: none;
+  }
+
+  .menu-bars {
+    display: none;
+  }
+}
+
+.mobile-nav-toggle[aria-expanded="true"] {
+  background-image: url('close-button.png');
+}
+
+/* instruction.html */
+
+.logo_Instruction {
+  margin: 0;
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.text p {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+.text {
+  background-color: rgb(80, 248, 248);
+}
+
+
+/* Previous_Courses.html */
+
+.previous_course {
+  font-size: 40px;
+  margin: 0;
+  text-align: center;
+}
+
+.menu-item {
+  margin-bottom: 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+body div.d-flex {
+  background-color: rgb(0, 145, 255);
+}
+
+.d-flex p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  width: 100%;
+  margin: 0px 25px;
+}
+
+table tr {
+  display: flex; 
+  height: 80px;
+}
+
+.property {
+    flex: 1;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    height: 100%; 
+}
+
+button {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: rgb(80, 248, 248);
+  width: 175px;
+  height: 40px;
+  border: 5px 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+/* Courses.html */
+
+.course_register {
+  margin: 0;
+  text-align: center;
+}
+
+.menu-item {
+  margin-bottom: 0;
+}
+
+.search{
+  padding: 10px;
+  background-color: rgb(0, 145, 255);
+  padding: 5px;
+  margin: 0px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.search p{
+  font-weight: bold;
+  text-indent: 20px;
+  font-size: 40px;
+}
+
+.search br{
+  text-indent: 10px;
+}
+
+.search input{
+  width: 200px;
+  padding: 5px;
+  margin: 5px 0;
+
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.search label{
+  text-indent: 50px;
+  display: flex;
+  align-items: center;
+}
+
+input[name="name"] {
+  margin-left: 100px; 
+}
+
+input[name="search"] {
+  margin-left: 57px;
+}
+
+.search button {
+  margin-left: 50px;
+  font-size: 20px;
+  font-style: italic;
+}
+
+#courseList {
+  display: none;
+}
+
+#courseList.visible {
+  display: block;
+}

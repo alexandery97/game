@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previous Courses</title>
+    <link rel="stylesheet" href="app.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="search.js" defer></script>
+    <script src="main.js" defer></script>
+
+</head>
+<body>
+    <h1 class= "previous_course"> Course Man => Update Courses </h1>
+    <a href="index.html"><button class="menu-bars" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+    </button></a>
+    <nav>
+        <ul id="primary-navigations" class="primary-navigation flex" data-visible="false">
+            <li>
+                <a href="index.html" >
+                  <span aria-hidden="true">00</span>Home
+              </a></li>
+        </ul>
+    </nav>
+
+    <div class="d-flex flex-wrap">
+        <p>Check off the course you have completed with a C or better.</p>
+        <form>
+            <table class ="tables">
+                <tr>
+                    <td class="property"><input type="checkbox" id="CSE101"> CSE101 </td>
+                    <td class="property"><input type="checkbox" id="CSE114"> CSE114 </td>
+                    <td class="property"><input type="checkbox" id="CSE214"> CSE214 </td>
+                    <td class="property"><input type="checkbox" id="CSE215"> CSE215 </td>
+                    <td class="property"><input type="checkbox" id="CSE216"> CSE216 </td>
+                </tr>
+                <tr>
+                    <td class="property"><input type="checkbox" id="CSE220"> CSE220</td>
+                    <td class="property"><input type="checkbox" id="CSE300"> CSE300</td>
+                    <td class="property"><input type="checkbox" id="CSE303"> CSE303</td>
+                    <td class="property"><input type="checkbox" id="CSE305"> CSE305</td>
+                    <td class="property"><input type="checkbox" id="CSE306"> CSE306</td>
+                </tr>
+                <tr>
+                    <td class="property"><input type="checkbox" id="CSE310"> CSE310</td>
+                    <td class="property"><input type="checkbox" id="CSE312"> CSE312</td>
+                    <td class="property"><input type="checkbox" id="CSE316"> CSE316</td>
+                    <td class="property"><input type="checkbox" id="CSE320"> CSE320</td>
+                    <td class="property"><input type="checkbox" id="CSE416"> CSE416</td>
+                </tr>
+            </table>
+        </form>
+        <button onclick="setPreviousCourses()">
+            Set Previous Courses
+        </button>
+    </div>
+</body>
+</html>

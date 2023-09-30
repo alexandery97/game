@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="main.js" defer></script>
+    <script src="search.js" defer></script>
+
+    <style>
+        body {
+            background-color: #ffffff;  
+            color: #000000;  
+        }
+        #courseList {
+            background-color: rgb(0,145,255);  
+        }
+        #courseList input,
+        #courseList label {
+            color: #000000; 
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class= "course_register"> Course Man => Search/Register </h1>
+    <a href="index.html"><button class="menu-bars" aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+    </button></a>
+    <nav>
+        <ul id="primary-navigations" class="primary-navigation flex" data-visible="false">
+            <li>
+                <a href="index.html" >
+                  <span aria-hidden="true">00</span>Home
+              </a></li>
+        </ul>
+    </nav>
+    <div class="search">
+        <p>Search Form</p>
+        <label>
+            Name:
+            <input type="text" name="name" placeholder="Enter a name"/>
+        </label>
+        <br>
+        <label>
+            Search for:
+            <input type="text" name="search" placeholder="Enter any search"/>
+        </label>
+        <br>
+        <button id="toggleButton" onclick="toggleCourses()">Show Courses</button>
+    </div>
+        <div id="courseList"></div>
+</body>
+</html>
